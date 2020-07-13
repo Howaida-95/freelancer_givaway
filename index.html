@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/index.css"/> 
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
+  <!-- fontawsome -->
+  <script src="https://kit.fontawesome.com/bfc465f3d5.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+<body class="d-flex justify-content-center py-3">
+  <div class="container shadow-lg p-0 round">
+<!-- start carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide round-top d-flex justify-content-center" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner round-top">
+        <div class="carousel-item active">
+          <img src="./images/img.jpg" class="d-block w-100 round-top" alt="img1">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/img.jpg" class="d-block w-100 round-top" alt="img2">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/img.jpg" class="d-block w-100 round-top" alt="img3">
+        </div>
+      </div>
+    <!-- start title -->
+    <div class="title position-absolute">
+      <h1 class="heading bg-white text-center round-top font-weight-bold">Enterprise Launch Giveaway</h1>
+    </div>
+    <!-- end title -->   
+    </div>
+<!-- end carousel-->
+
+<!-- start counter -->
+    <section class="counter mt-5 text-center px-5">
+      <div class="row th mb-1">
+        <div class="col-2 offset-4">DAYS</div>
+        <div class="col-2">HRS</div>
+        <div class="col-2 ">MINS</div>
+        <div class="col-2">SEC</div>
+      </div>
+      <div class="row main rounded-lg"><!--1st row -->
+        <div class="col-4 p-3 cell heading main-cell">Time Left:</div>
+        <div class="days col-2 p-3 text-white cell heading cell-border-x"></div>
+        <div class="hours col-2 p-3 text-white cell heading cell-border-right"></div>
+        <div class="minutes col-2 p-3 text-white cell heading cell-border-right"></div>
+        <div class="seconds col-2 p-3 text-white cell heading"></div>
+      </div>
+      <p class="msg mt-1 font-weight-bold heading p-0"></p>
+    </section>
+<!-- end counter -->
+
+<!-- start prize detailed section -->
+    <section class="prize px-5 mt-5">
+      <div class="row">
+        <div class="col-6">
+          <div class="card shadow-sm rounded-lg">
+            <div class="avatar shadow-sm d-flex justify-content-center align-items-center">
+              <i class="fas fa-dollar-sign text-white"></i>
+            </div>
+            <div class="card-body px-4 px-md-3 py-3 text-center heading">
+              Value: <span class="font-weight-bold">$50</span>
+            </div>
+          </div>
+        </div>
+          <div class="col-6">
+            <div class="card shadow-sm rounded-lg">
+              <div class="avatar shadow-sm d-flex justify-content-center align-items-center">
+                <i class="fas fa-trophy text-white"></i>              </div>
+              <div class="card-body px-4 px-md-3 py-3 text-center heading">
+                Winners: <span class="font-weight-bold">03</span>
+              </div>
+        </div>
+      </div>
+    </section>
+<!-- end prize detailed section-->
+
+<!-- start form -->
+    <section class="form px-5 mt-5">
+      <h3 class="text-center mb-3 font-weight-bold">Enter with your email address</h3>
+      <form>
+        <!-- input -->
+        <div class="input-group">
+          <input type="email" class="input-rounded form-control bg-transparent border-right-0 " aria-label="Your Email Address" aria-describedby="button-addon">
+          <div class="input-group-append">
+            <button class="btn-rounded btn text-white border-left-0 font-weight-bold" type="submit" id="button-addon">
+              SEND
+            </button>
+          </div>
+        </div>
+        <!-- checkbox -->
+        <div class="checkbox-container mt-2 ml-3">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">I consent to getting sale, promotion, or marketing email*</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck2">
+            <label class="custom-control-label" for="customCheck2">I want to hear about more free giveaways!</label>
+          </div>
+        </div>
+      </form>
+    </section>
+<!-- end form -->
+
+<!-- start sharing section -->
+    <section class="sharing px-5 mt-5">
+      <h3 class="text-center mb-3 mb-xl-5 font-weight-bold">Sharing for more entries </h3>
+      <ul class="d-flex justify-content-center align-items-center list-unstyled m-0 p-0">
+        <li><a href="#"><i class="fa fa-facebook text-white" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter text-white" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-google-plus text-white" aria-hidden="true"></i></a></li></a></li>
+        <li><a href="#"><i class="fa fa-instagram text-white" aria-hidden="true"></i></a></li>
+      </ul>
+    </section>
+<!-- end sharing section -->
+
+<!-- start footer -->
+    <footer class="d-flex justify-content-center align-items-center mt-5 round-bottom py-4">
+      <p class="font-weight-bold">Offered By Ludustack</p>
+    </footer>
+<!-- end footer -->
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>

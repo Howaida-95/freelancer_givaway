@@ -1,0 +1,122 @@
+/* global */
+body{font-family: 'Open Sans', 'Helvetica Neue', sans-serif}
+.heading{font-family: 'Poppins', sans-serif; font-size: 13px; padding: 0.75rem 2rem}
+h3{font-family: 'Poppins', sans-serif; font-size: 10px}
+/*rounded border*/
+.round{border-radius: 1rem}
+.round-top{border-radius: 1rem 1rem 0 0}/* top border radius */
+/* carousel */
+.carousel-indicators li {width: 12px; height: 12px; border-radius: 50%}/* make the carousel indicators circular */
+.carousel-indicators {bottom: 10%}
+/* title */
+.title{z-index: 3; bottom: -12%}
+/* counter */
+.counter .th{ color: #c1bfbf; font-size: 8px}
+.counter .main{border: 1px solid #29293a}
+.counter .cell{font-family: 'Poppins', sans-serif; background-color: #29293a}
+.counter .main-cell{font-family: 'Damion', cursive; color: #ffec17}
+.cell-border-x{border-right: 1px solid #65658e; border-left: 1px solid #65658e}
+.cell-border-right{border-right: 1px solid #65658e}
+.counter .msg{color: #ed1c94;}
+/* prize details */
+.prize .avatar{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%; 
+  left: 0;
+  background-color: #ed1c94;
+  transition: all 0.13 ease-in-out;
+}
+.prize .avatar:hover{background-color: #981df0}
+.card-body{font-family: 'Damion', cursive; color: #838386}
+.card-body span{font-family: 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 70%;color: #212529}
+/* form */
+.form .btn{
+  border: 1px solid #ed1c94;
+  background-color: #ed1c94;
+  transition: all 0.13s ease-in-out;
+  letter-spacing: 0.15rem;
+  font-size: 0.65rem;
+}
+.form .btn:hover,
+.form .btn:focus{border: 1px solid #981df0;background-color: #981df0}
+.form-control:focus,.btn:focus{outline: 0; box-shadow: 0 0 0 0 transparent}
+.form-control:focus{border-color: #ced4da}
+.input-rounded{border-radius: 50rem 0 0 50rem}
+.btn-rounded{border-radius: 0 50rem 50rem 0}
+.checkbox-container{font-size: 0.75rem; color: #838386}
+/* checkbox custome styling */
+.custom-control-input:checked~.custom-control-label::before {color: #fff; border-color: #ed1c94; background-color: #ed1c94} 
+.custom-checkbox .custom-control-input~.custom-control-label::before{ border-radius: 50%}
+.custom-checkbox .custom-control-input:focus~.custom-control-label::before{border-color: rgba(237, 28, 148, 0.4); box-shadow: 0 0 0 0.2rem rgba(237, 28, 148, 0.2)}
+
+/* sharing section */
+@media (max-width: 600px) {.sharing ul {transform: scale(0.5)}}
+@media (min-width: 601px) and (max-width: 700px) {.sharing ul {transform: scale(0.7)}}
+@media (min-width: 701px) and (max-width: 800px) {.sharing ul {transform: scale(0.8)}}
+.sharing ul li {margin: 0 40px}
+.sharing ul li a .fa {font-size: 30px; line-height: 60px; transition: 0.5s}
+.sharing ul li a {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: #ed1c94;
+  text-align: center;
+  transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+  transition: 0.5s;
+  box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+}
+.sharing ul li a::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  height: 100%;
+  width: 20px;
+  background: #ed1c94;
+  transition: 0.5s;
+  transform: rotate(0deg) skewY(-45deg);
+}
+.sharing ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: -10px;
+  height: 20px;
+  width: 100%;
+  background: #ed1c94;
+  transition: 0.5s;
+  transform: rotate(0deg) skewX(-45deg);
+}
+.sharing ul li a:hover {transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px,-20px); box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5)}
+.sharing ul li:hover a, .sharing ul li:hover a::before, .sharing ul li:hover a::after {background-color: #981df0}
+/* footer */
+footer{background-color: #29293a}
+footer p{color: #ffec17; font-size: 0.5rem; letter-spacing: 0.08rem}
+.round-bottom{border-radius: 0 0 1rem 1rem}
+/* media query */
+@media screen and (min-width: 400px){
+  .heading{font-size: 20px; padding: 0.75rem 2rem}
+  .counter .th{font-size: 10px}
+  h3{font-size: 16px}
+}
+@media screen and (min-width: 768px){
+  .container{max-width: 80%}
+  .heading{font-size: 30px; padding: 1rem 2.5rem}
+  .counter .th{font-size: 12px}
+  h3{font-size: 20}
+  .form .btn, footer p{font-size: 0.75rem}
+}
+@media screen and (min-width: 992px){
+  .container {max-width: 70%}
+  .heading{font-size: 35px; padding: 1.2rem 3rem}
+  .counter .th{font-size: 14px}
+  h3{font-size: 30px}
+  .form .btn, footer p{font-size: 1rem}
+}
+@media (min-width: 1200px){.container{max-width: 60%}}
