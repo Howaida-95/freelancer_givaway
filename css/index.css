@@ -12,7 +12,7 @@ h3{font-family: 'Poppins', sans-serif; font-size: 10px}
 .title{z-index: 3; bottom: -12%}
 /* counter */
 .counter .th{ color: #c1bfbf; font-size: 8px}
-.counter .main{border: 1px solid #29293a}
+.counter .main{border: 1px solid #29293a; background-color: #29293a}
 .counter .cell{font-family: 'Poppins', sans-serif; background-color: #29293a}
 .counter .main-cell{font-family: 'Damion', cursive; color: #ffec17}
 .cell-border-x{border-right: 1px solid #65658e; border-left: 1px solid #65658e}
@@ -55,9 +55,6 @@ h3{font-family: 'Poppins', sans-serif; font-size: 10px}
 .custom-checkbox .custom-control-input:focus~.custom-control-label::before{border-color: rgba(237, 28, 148, 0.4); box-shadow: 0 0 0 0.2rem rgba(237, 28, 148, 0.2)}
 
 /* sharing section */
-@media (max-width: 600px) {.sharing ul {transform: scale(0.5)}}
-@media (min-width: 601px) and (max-width: 700px) {.sharing ul {transform: scale(0.7)}}
-@media (min-width: 701px) and (max-width: 800px) {.sharing ul {transform: scale(0.8)}}
 .sharing ul li {margin: 0 40px}
 .sharing ul li a .fa {font-size: 30px; line-height: 60px; transition: 0.5s}
 .sharing ul li a {
@@ -97,7 +94,7 @@ h3{font-family: 'Poppins', sans-serif; font-size: 10px}
 .sharing ul li:hover a, .sharing ul li:hover a::before, .sharing ul li:hover a::after {background-color: #981df0}
 /* footer */
 footer{background-color: #29293a}
-footer p{color: #ffec17; font-size: 0.5rem; letter-spacing: 0.08rem}
+footer p{color: #ffec17; font-size: 0.65rem; letter-spacing: 0.08rem}
 .round-bottom{border-radius: 0 0 1rem 1rem}
 /* media query */
 @media screen and (min-width: 400px){
@@ -107,16 +104,19 @@ footer p{color: #ffec17; font-size: 0.5rem; letter-spacing: 0.08rem}
 }
 @media screen and (min-width: 768px){
   .container{max-width: 80%}
-  .heading{font-size: 30px; padding: 1rem 2.5rem}
+  .heading{font-size: 25px; padding: 1rem 2.5rem}
   .counter .th{font-size: 12px}
   h3{font-size: 20}
   .form .btn, footer p{font-size: 0.75rem}
 }
 @media screen and (min-width: 992px){
   .container {max-width: 70%}
-  .heading{font-size: 35px; padding: 1.2rem 3rem}
+  .heading{font-size: 30px; padding: 1.2rem 3rem}
   .counter .th{font-size: 14px}
   h3{font-size: 30px}
   .form .btn, footer p{font-size: 1rem}
 }
 @media (min-width: 1200px){.container{max-width: 60%}}
+@media (max-width: 600px) {.sharing ul {transform: scale(0.4)}}/*sharing icons */
+@media (min-width: 601px) and (max-width: 700px) {.sharing ul {transform: scale(0.6)}}
+@media (min-width: 701px) and (max-width: 800px) {.sharing ul {transform: scale(0.8)}}
