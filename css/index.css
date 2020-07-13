@@ -117,6 +117,6 @@ footer p{color: #ffec17; font-size: 0.65rem; letter-spacing: 0.08rem}
   .form .btn, footer p{font-size: 1rem}
 }
 @media (min-width: 1200px){.container{max-width: 60%}}
-@media (max-width: 600px) {.sharing ul {transform: scale(0.4)}}/*sharing icons */
-@media (min-width: 601px) and (max-width: 700px) {.sharing ul {transform: scale(0.6)}}
-@media (min-width: 701px) and (max-width: 800px) {.sharing ul {transform: scale(0.8)}}
+@media (max-width: 566px) {.sharing ul {transform: scale(0.4)}}/*sharing icons */
+@media (min-width: 567px) and (max-width: 991px) {.sharing ul {transform: scale(0.7)}}
+@media (min-width: 992px) and (max-width: 1200px) {.sharing ul {transform: scale(0.8)}}
